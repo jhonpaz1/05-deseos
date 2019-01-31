@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { TerminadosPage } from '../../pages/terminados/terminados.component';
 import { PendientesPage } from 'src/pages/pendientes/pendientes.component';
+// import { Tab2Page } from '../tab2/tab2.page';
+import { TerminadosPage } from '../../pages/terminados/terminados.component';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  templateUrl: 'tabs.html'
 })
-export class Tab2Page {
+export class Tab1Page {
   Tab1Page = PendientesPage;
   Tab2Page = TerminadosPage;
 }

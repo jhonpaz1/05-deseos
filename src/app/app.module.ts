@@ -9,9 +9,13 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Componentes
+import { PendientesPage } from '../pages/pendientes/pendientes.component';
+import { TerminadosPage } from '../pages/terminados/terminados.component';
+
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [AppComponent, PendientesPage, TerminadosPage],
+  entryComponents: [PendientesPage, TerminadosPage],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
